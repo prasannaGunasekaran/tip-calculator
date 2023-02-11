@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href=".normalize.css" />
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="./stylees/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <body>
+    <h1 class="main-title">SPLI</h1>
+    <h1 class="main-title">TTER</h1>
+    <div class="main">
+      <div class="left-container">
+
+        <div class="form-control">
+        <label for="bill" class="section-title">Bill</label>
+        <input type="number" id="bill" name="bill" class="input-bill input" >
+        </div>
+
+        <div class="form-control">
+          <h2 class="section-title">Select Tip%</h2>
+          <div class="tips-container">
+            <input type="button" name="tip-percent" class="tip-percentage" value="5"/>
+            <input type="button" name="tip-percent" class="tip-percentage" value="10"/>
+            <input type="button" name="tip-percent" class="tip-percentage" value="15"/>
+            <input type="button" name="tip-percent" class="tip-percentage" value="25"/>
+            <input type="button" name="tip-percent" class="tip-percentage" value="50"/>
+            <input type="number" placeholder="custom" class="custom-tip" id="custom-tip" />
+          </div>
+        </div>
+        <!--form 3-->
+        <div class="form-control">
+          <label for="people" class="label label-people">Number of people</label>
+          <p class="error-msg" id="error">Cannot be Zero</p>
+          <input type="number" id="people" name="people" class="input-people input" >
+          </div>
+      </div>
+
+      <!--right container-->
+
+      <div class="right-container">
+
+        <div class="output-container">
+          <div class="output tip-amount">
+
+            <div class="output-left">
+              <p class="title">Tip Amount</p>
+              <p class="subtitle">/person</p>
+            </div>
+
+            <div class="output-right">
+              <p id="amount" class="amount">$00.00</p>
+            </div>
+            
+          </div>
+
+        <div class="output total">
+          <div class="output-left">
+            <p class="title">Total</p>
+            <p class="subtitle">/person</p>
+          </div>
+          <div class="output-right">
+            <p id="total" class="amount">$00.00</p>
+          </div>
+
+  
+        </div>
+        </div>
+        <div class="button">
+          <button class="btn-reset" id="btn-reset">
+            RESET
+          </button>
+  
+        </div>
+      </div>
+    </div>
+  
+    </main>
+    <!--main class end-->
+
+    
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
