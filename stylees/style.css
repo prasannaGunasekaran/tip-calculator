@@ -121,7 +121,7 @@ body {
 }
  .error-msg {
   display: none;
-  color: yellow;
+  color:red;
   font-size: 0.8rem;
   padding-bottom: 0.4rem;
   font-weight: bold;
